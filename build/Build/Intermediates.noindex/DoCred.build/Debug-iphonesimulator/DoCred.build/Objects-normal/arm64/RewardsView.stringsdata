@@ -1,0 +1,80 @@
+{
+  "source": "/Users/aditysaib/Desktop/DoCred/DoCred/Views/RewardsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Rewards",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "Redeem Reward?",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "Redeem",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "points",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Group Reward",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "Redeem",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "This will cost %lld points. Are you sure?",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 121
+        }
+      }
+    ]
+  },
+  "version": 1
+}
