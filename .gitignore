@@ -1,7 +1,0 @@
-# Xcode build and cache
-DerivedData/
-build/
-.swiftpm/
-.build/
-xcuserdata/
-.DS_Store
