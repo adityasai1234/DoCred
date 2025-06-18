@@ -1,0 +1,178 @@
+{
+  "" : {
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCred-master.dia",
+    "emit-module-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCred-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCred-master-emit-module.dia",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCred-master.swiftdeps"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/ContentView.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/DoCredApp.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCredApp.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCredApp.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCredApp.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCredApp.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCredApp.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCredApp.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCredApp.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DoCredApp~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Item.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Item.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Item.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Item.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Item.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Item.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Item.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Item.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Item~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Models/Badge.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Badge.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Badge.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Badge.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Badge.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Badge.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Badge.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Badge.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Badge~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Models/Chore.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Chore.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Chore.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Chore.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Chore.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Chore.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Chore.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Chore.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Chore~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Models/Household.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Household.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Household.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Household.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Household.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Household.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Household.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Household.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Household~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Models/ProofSubmission.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProofSubmission.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProofSubmission.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProofSubmission.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProofSubmission.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProofSubmission.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProofSubmission.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProofSubmission.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProofSubmission~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Models/Reward.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Reward.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Reward.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Reward.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Reward.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Reward.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Reward.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Reward.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/Reward~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Models/User.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/User.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/User.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/User.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/User.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/User.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/User.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/User.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/User~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Views/ChoresView.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ChoresView.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ChoresView.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ChoresView.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ChoresView.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ChoresView.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ChoresView.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ChoresView.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ChoresView~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Views/DashboardView.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DashboardView.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DashboardView.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DashboardView.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DashboardView.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DashboardView.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DashboardView.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DashboardView.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/DashboardView~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Views/LeaderboardView.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/LeaderboardView.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/LeaderboardView.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/LeaderboardView.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/LeaderboardView.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/LeaderboardView.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/LeaderboardView.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/LeaderboardView.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/LeaderboardView~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Views/MainTabView.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/MainTabView.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/MainTabView.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/MainTabView.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/MainTabView.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/MainTabView.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/MainTabView.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/MainTabView.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/MainTabView~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Views/ProfileView.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProfileView.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProfileView.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProfileView.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProfileView.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProfileView.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProfileView.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProfileView.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/ProfileView~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Views/RewardsView.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/RewardsView.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/RewardsView.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/RewardsView.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/RewardsView.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/RewardsView.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/RewardsView.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/RewardsView.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/RewardsView~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/DoCred/Views/SubmitProofView.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/SubmitProofView.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/SubmitProofView.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/SubmitProofView.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/SubmitProofView.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/SubmitProofView.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/SubmitProofView.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/SubmitProofView.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/SubmitProofView~partial.swiftmodule"
+  },
+  "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/aditysaib/Desktop/DoCred/build/Build/Intermediates.noindex/DoCred.build/Debug-iphonesimulator/DoCred.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}
