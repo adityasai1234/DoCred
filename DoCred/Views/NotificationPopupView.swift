@@ -9,7 +9,7 @@ struct NotificationPopupView: View {
             Spacer()
         }
         .padding()
-        .background(Color.gray.opacity(0.1))
+        .background(Color(uiColor: UIColor.systemGray6))
         .cornerRadius(16)
         .shadow(radius: 4)
         .padding()

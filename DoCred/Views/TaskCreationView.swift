@@ -7,6 +7,7 @@ struct TaskCreationView: View {
     @State private var teamId: String = ""
     @State private var recurrence: RecurrenceRule = .none
     @State private var recurrenceEndDate: Date = Date()
+    @State private var score: String = ""
     
     // Mock data for users and teams
     let users = ["demoUser1", "demoUser2", "demoUser3"]
@@ -17,6 +18,7 @@ struct TaskCreationView: View {
             Section(header: Text("Task Details")) {
                 TextField("Title", text: $title)
                 TextField("Details", text: $details)
+                TextField("Score", text: $score)
             }
             Section(header: Text("Assign To")) {
                 Picker("User", selection: $assignedTo) {
@@ -43,16 +45,16 @@ struct TaskCreationView: View {
                 }
             }
             Button("Create Task") {
-                let newTask = Task(
+                let newTask = AppTask(
                     id: UUID().uuidString,
                     title: title,
                     details: details,
-                    status: .pending,
+                    status: TaskStatus.pending,
                     createdAt: Date(),
                     updatedAt: nil,
                     assignedTo: assignedTo,
                     reviewedBy: nil,
-                    score: nil,
+                    score: Int(score) ?? 0,
                     teamId: teamId.isEmpty ? nil : teamId,
                     recurrence: recurrence,
                     recurrenceEndDate: recurrence == .none ? nil : recurrenceEndDate

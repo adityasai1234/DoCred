@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SubmitProofView: View {
-    let task: Task
+    let task: AppTask
     @State private var notes: String = ""
     var body: some View {
         Form {

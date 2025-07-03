@@ -5,9 +5,9 @@ struct ProfileView: View {
     @State private var showAchievement = false
     // Mock user and completed tasks
     let user = User(id: "demoUser1", name: "Alex Johnson", email: "alex@example.com", credibilityScore: 120, teamId: nil, badges: ["Starter", "Reliable"], role: .member)
-    let completedTasks: [Task] = [
-        Task(id: "task1", title: "Take out trash", details: "Take out the trash before 8pm", status: .approved, createdAt: Date().addingTimeInterval(-86400 * 2), updatedAt: nil, assignedTo: "demoUser1", reviewedBy: nil, score: 10, teamId: nil, recurrence: .none, recurrenceEndDate: nil),
-        Task(id: "task2", title: "Wash dishes", details: "Wash all dishes after dinner", status: .approved, createdAt: Date().addingTimeInterval(-86400 * 1), updatedAt: nil, assignedTo: "demoUser1", reviewedBy: nil, score: 8, teamId: nil, recurrence: .none, recurrenceEndDate: nil)
+    let completedTasks: [AppTask] = [
+        AppTask(id: "task1", title: "Take out trash", details: "Take out the trash before 8pm", status: .approved, createdAt: Date().addingTimeInterval(-86400 * 2), updatedAt: nil, assignedTo: "demoUser1", reviewedBy: nil, score: 10, teamId: nil, recurrence: .none, recurrenceEndDate: nil),
+        AppTask(id: "task2", title: "Wash dishes", details: "Wash all dishes after dinner", status: .approved, createdAt: Date().addingTimeInterval(-86400 * 1), updatedAt: nil, assignedTo: "demoUser1", reviewedBy: nil, score: 8, teamId: nil, recurrence: .none, recurrenceEndDate: nil)
     ]
     
     var body: some View {
@@ -184,7 +184,7 @@ struct StatCard: View {
 }
 
 struct CompletedTaskCard: View {
-    let task: Task
+    let task: AppTask
     
     var body: some View {
         HStack(spacing: 12) {

@@ -120,18 +120,18 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showingSubmitSheet) {
             NavigationView {
-                SubmitProofView(task: Task(
+                SubmitProofView(task: AppTask(
                     id: "demoTask",
                     title: "Demo Task",
                     details: "This is a demo task for proof submission.",
-                    status: .pending,
+                    status: TaskStatus.pending,
                     createdAt: Date(),
                     updatedAt: nil,
                     assignedTo: "demoUserId",
                     reviewedBy: nil,
                     score: 5,
                     teamId: nil,
-                    recurrence: .none,
+                    recurrence: RecurrenceRule.none,
                     recurrenceEndDate: nil
                 ))
             }

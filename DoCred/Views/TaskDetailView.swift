@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TaskDetailView: View {
-    let task: Task
+    let task: AppTask
     @State private var showFairnessVoting = false
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {

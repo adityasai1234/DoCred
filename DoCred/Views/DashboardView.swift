@@ -2,112 +2,50 @@ import SwiftUI
 
 struct DashboardView: View {
     @StateObject var viewModel = DashboardViewModel()
-    @StateObject private var streakManager = StreakManager.shared
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var showMiniGame = false
-    @State private var showTimer = false
+    @State private var selectedMiniGame: MiniGameType? = nil
+    @State private var searchText = ""
+    @State private var sortOption: SortOption = .date
+    
+    enum SortOption: String, CaseIterable {
+        case date = "Date"
+        case status = "Status"
+        case title = "Title"
+        case priority = "Priority"
+    }
+    
+    var filteredTasks: [AppTask] {
+        if searchText.isEmpty {
+            return viewModel.tasks
+        } else {
+            return viewModel.tasks.filter { task in
+                task.title.localizedCaseInsensitiveContains(searchText) ||
+                task.details.localizedCaseInsensitiveContains(searchText)
+            }
+        }
+    }
+    
+    var sortedTasks: [AppTask] {
+        switch sortOption {
+        case .date:
+            return filteredTasks.sorted { $0.createdAt > $1.createdAt }
+        case .status:
+            return filteredTasks.sorted { $0.status.rawValue < $1.status.rawValue }
+        case .title:
+            return filteredTasks.sorted { $0.title < $1.title }
+        case .priority:
+            return filteredTasks.sorted { ($0.score ?? 0) > ($1.score ?? 0) }
+        }
+    }
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 24) {
-                // Header section
-                VStack(alignment: .leading, spacing: 16) {
-                    if let user = viewModel.user {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Hello, \(user.name)")
-                                .font(.system(size: 28, weight: .bold, design: .rounded))
-                                .foregroundColor(.primary)
-                            
-                            Text("Ready to tackle today's tasks?")
-                                .font(.system(size: 16, weight: .medium))
-                                .foregroundColor(.secondary)
-                        }
-                    }
-                    // Progress indicator
-                    VStack(alignment: .leading, spacing: 8) {
-                        HStack {
-                            Text("Today's Progress")
-                                .font(.system(size: 18, weight: .semibold))
-                            Spacer()
-                            Text("\(viewModel.tasks.filter { $0.status == .approved }.count)/\(viewModel.tasks.count)")
-                                .font(.system(size: 16, weight: .medium))
-                                .foregroundColor(.secondary)
-                        }
-                        ProgressView(value: Double(viewModel.tasks.filter { $0.status == .approved }.count), total: Double(max(viewModel.tasks.count, 1)))
-                            .progressViewStyle(LinearProgressViewStyle(tint: themeManager.customAccentColor))
-                            .scaleEffect(x: 1, y: 2, anchor: .center)
-                    }
-                    
-                    // Streak counter
-                    if streakManager.currentStreak > 0 {
-                        HStack {
-                            Text(streakManager.getStreakEmoji())
-                                .font(.title2)
-                            VStack(alignment: .leading, spacing: 2) {
-                                Text("\(streakManager.currentStreak) day streak!")
-                                    .font(.system(size: 16, weight: .semibold))
-                                    .foregroundColor(themeManager.customAccentColor)
-                                Text("Longest: \(streakManager.longestStreak) days")
-                                    .font(.system(size: 12, weight: .medium))
-                                    .foregroundColor(.secondary)
-                            }
-                            Spacer()
-                        }
-                        .padding(.vertical, 8)
-                        .padding(.horizontal, 12)
-                        .background(Color.gray.opacity(0.1))
-                        .cornerRadius(8)
-                        .onTapGesture {
-                            HapticManager.shared.lightImpact()
-                        }
-                    }
-                }
-                .padding(.horizontal, 20)
-                .padding(.top, 16)
-                // Tasks section
-                VStack(alignment: .leading, spacing: 16) {
-                    HStack {
-                        Text("Your Tasks")
-                            .font(.system(size: 22, weight: .bold, design: .rounded))
-                        Spacer()
-                        Button("View All") {
-                        }
-                        .font(.system(size: 14, weight: .medium))
-                        .foregroundColor(themeManager.customAccentColor)
-                    }
-                    .padding(.horizontal, 20)
-                    LazyVStack(spacing: 12) {
-                        ForEach(viewModel.tasks) { task in
-                            NavigationLink(destination: TaskDetailView(task: task)) {
-                                TaskCardView(task: task)
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                        }
-                    }
-                    .padding(.horizontal, 20)
-                }
-                VStack(alignment: .leading, spacing: 16) {
-                    HStack(spacing: 12) {
-                        QuickActionButton(
-                            title: "Mini-Game",
-                            icon: "gamecontroller.fill",
-                            color: .purple
-                        ) {
-                            showMiniGame = true
-                        }
-                        
-                        QuickActionButton(
-                            title: "Timer",
-                            icon: "timer",
-                            color: .orange
-                        ) {
-                            showTimer = true
-                        }
-                    }
-                    .padding(.horizontal, 20)
-                }
-            }
-            .padding(.bottom, 100) // Space for FAB
+            mainContent
+        }
+        .refreshable {
+            try? await Task.sleep(nanoseconds: 1_000_000_000)
+            viewModel.loadDashboard(userId: "demoUserId")
         }
         .background(
             LinearGradient(
@@ -143,10 +81,158 @@ struct DashboardView: View {
             viewModel.loadDashboard(userId: "demoUserId")
         }
         .sheet(isPresented: $showMiniGame) {
-            MiniGameView(users: ["Alice", "Bob", "Charlie", "Dana"])
+            MiniGameSelectionView { game in
+                selectedMiniGame = game
+            }
         }
-        .sheet(isPresented: $showTimer) {
-            TaskTimerView()
+        .sheet(item: $selectedMiniGame) { game in
+            switch game {
+            case .memoryMatch:
+                MiniGameView(users: ["Alice", "Bob", "Charlie", "Dana"])
+            case .quickMath:
+                Text("Quick Math Game Coming Soon!")
+                    .font(.largeTitle)
+                    .padding()
+            case .wordScramble:
+                Text("Word Scramble Game Coming Soon!")
+                    .font(.largeTitle)
+                    .padding()
+            }
+        }
+    }
+
+    private var mainContent: some View {
+        VStack(spacing: 24) {
+            searchBar
+            headerSection
+            dailySummary
+            tasksSection
+            miniGameSection
+        }
+        .padding(.bottom, 100)
+    }
+
+    private var searchBar: some View {
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.secondary)
+            TextField("Search tasks...", text: $searchText)
+                .textFieldStyle(PlainTextFieldStyle())
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(Color(.systemGray6))
+        .cornerRadius(12)
+        .padding(.horizontal, 20)
+    }
+
+    private var headerSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            if let user = viewModel.user {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Hello, \(user.name)")
+                        .font(.system(size: 28, weight: .bold, design: .rounded))
+                        .foregroundColor(.primary)
+                    Text("Ready to tackle today's tasks?")
+                        .font(.system(size: 16, weight: .medium))
+                        .foregroundColor(.secondary)
+                }
+            }
+            VStack(alignment: .leading, spacing: 8) {
+                HStack {
+                    Text("Today's Progress")
+                        .font(.system(size: 18, weight: .semibold))
+                    Spacer()
+                    HStack(spacing: 4) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.system(size: 12))
+                            .foregroundColor(.green)
+                        Text("\(viewModel.tasks.filter { $0.status == .approved }.count)")
+                            .font(.system(size: 14, weight: .bold))
+                            .foregroundColor(.green)
+                    }
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(Color.green.opacity(0.1))
+                    .cornerRadius(8)
+                    Text("\(viewModel.tasks.filter { $0.status == .approved }.count)/\(viewModel.tasks.count)")
+                        .font(.system(size: 16, weight: .medium))
+                        .foregroundColor(.secondary)
+                }
+                ProgressView(value: Double(viewModel.tasks.filter { $0.status == .approved }.count), total: Double(max(viewModel.tasks.count, 1)))
+                    .progressViewStyle(LinearProgressViewStyle(tint: themeManager.customAccentColor))
+                    .scaleEffect(x: 1, y: 2, anchor: .center)
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.top, 16)
+    }
+
+    private var dailySummary: some View {
+        DailySummaryCard(
+            completedTasks: viewModel.tasks.filter { $0.status == .approved }.count,
+            totalTasks: viewModel.tasks.count,
+            streakDays: 7, // Mock data
+            totalXP: viewModel.tasks.filter { $0.status == .approved }.reduce(0) { $0 + ($1.score ?? 0) }
+        )
+        .padding(.horizontal, 20)
+    }
+
+    private var tasksSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                Text("Your Tasks")
+                    .font(.system(size: 22, weight: .bold, design: .rounded))
+                Spacer()
+                Menu {
+                    ForEach(SortOption.allCases, id: \.self) { option in
+                        Button(action: {
+                            sortOption = option
+                            HapticManager.shared.lightImpact()
+                        }) {
+                            HStack {
+                                Text(option.rawValue)
+                                if sortOption == option {
+                                    Image(systemName: "checkmark")
+                                }
+                            }
+                        }
+                    }
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "arrow.up.arrow.down")
+                            .font(.system(size: 12))
+                        Text("Sort")
+                            .font(.system(size: 14, weight: .medium))
+                    }
+                    .foregroundColor(themeManager.customAccentColor)
+                }
+            }
+            .padding(.horizontal, 20)
+            LazyVStack(spacing: 12) {
+                ForEach(sortedTasks) { task in
+                    NavigationLink(destination: TaskDetailView(task: task)) {
+                        TaskCardView(task: task)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                }
+            }
+            .padding(.horizontal, 20)
+        }
+    }
+
+    private var miniGameSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack(spacing: 12) {
+                QuickActionButton(
+                    title: "Mini-Game",
+                    icon: "gamecontroller.fill",
+                    color: .purple
+                ) {
+                    showMiniGame = true
+                }
+            }
+            .padding(.horizontal, 20)
         }
     }
 }

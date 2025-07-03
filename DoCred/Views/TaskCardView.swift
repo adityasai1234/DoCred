@@ -1,26 +1,19 @@
 import SwiftUI
 
 struct TaskCardView: View {
-    let task: Task
+    let task: AppTask
     @State private var isPressed = false
+    @State private var showCompletionAnimation = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             // Header with title and XP
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 4) {
-                    HStack {
-                        Text(task.title)
-                            .font(.system(size: 18, weight: .semibold, design: .rounded))
-                            .foregroundColor(.primary)
-                            .lineLimit(2)
-                        
-                        Spacer()
-                        
-                        // Priority indicator
-                        Text(task.priority.emoji)
-                            .font(.title3)
-                    }
+                    Text(task.title)
+                        .font(.system(size: 18, weight: .semibold, design: .rounded))
+                        .foregroundColor(.primary)
+                        .lineLimit(2)
                     
                     Text(task.details)
                         .font(.system(size: 14, weight: .regular))
@@ -29,6 +22,18 @@ struct TaskCardView: View {
                 }
                 
                 Spacer()
+                
+                // Completion checkmark animation
+                if task.status == .approved {
+                    Image(systemName: "checkmark.circle.fill")
+                        .font(.system(size: 24))
+                        .foregroundColor(.green)
+                        .scaleEffect(showCompletionAnimation ? 1.2 : 1.0)
+                        .animation(.spring(response: 0.3, dampingFraction: 0.6), value: showCompletionAnimation)
+                        .onAppear {
+                            showCompletionAnimation = true
+                        }
+                }
                 
                 if let xp = task.score {
                     VStack(spacing: 2) {
@@ -83,6 +88,15 @@ struct TaskCardView: View {
                         .font(.system(size: 12, weight: .medium))
                         .foregroundColor(.secondary)
                 }
+                
+                // Share button
+                Button(action: {
+                    shareTask()
+                }) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.system(size: 12))
+                        .foregroundColor(.blue)
+                }
             }
         }
         .padding(16)
@@ -122,6 +136,33 @@ struct TaskCardView: View {
             return Color.blue
         case .reviewed:
             return Color.orange
+        }
+    }
+    
+    func shareTask() {
+        let dateFormatter: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            return formatter
+        }()
+        let shareText = """
+        Task: \(task.title)
+        Description: \(task.details)
+        Status: \(task.status.rawValue.capitalized)
+        XP: \(task.score ?? 0)
+        Created: \(dateFormatter.string(from: task.createdAt))
+        
+        Shared from DoCred App
+        """
+        
+        let activityVC = UIActivityViewController(
+            activityItems: [shareText],
+            applicationActivities: nil
+        )
+        
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let window = windowScene.windows.first {
+            window.rootViewController?.present(activityVC, animated: true)
         }
     }
 }
