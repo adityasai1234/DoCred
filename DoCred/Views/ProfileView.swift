@@ -13,9 +13,7 @@ struct ProfileView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
-                // Profile header
                 VStack(spacing: 20) {
-                    // Avatar and user info
                     VStack(spacing: 16) {
                         ZStack {
                             Circle()

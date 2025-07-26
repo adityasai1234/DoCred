@@ -19,9 +19,7 @@ struct LandingDemoView: View {
                     .foregroundColor(.secondary)
                 Spacer()
                 VStack(spacing: 16) {
-                    Button(action: {
-                        // Navigate to dashboard
-                    }) {
+                    Button(action: {                    }) {
                         Label("Go to Dashboard", systemImage: "list.bullet.rectangle")
                             .font(.headline)
                             .frame(maxWidth: .infinity)

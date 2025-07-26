@@ -12,3 +12,4 @@ struct BadgeViewerView: View {
         .navigationTitle("Badges")
     }
 }
+

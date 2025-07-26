@@ -57,4 +57,4 @@ enum MiniGameType: CaseIterable, Identifiable {
         case .wordScramble: return "textformat.abc"
         }
     }
-} 
+}

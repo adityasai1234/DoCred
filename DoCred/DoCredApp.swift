@@ -1,5 +1,4 @@
 import SwiftUI
-import SwiftData
 
 @main
 struct DoCredApp: App {
@@ -12,10 +11,12 @@ struct DoCredApp: App {
                 WelcomeScreen(onContinue: { showWelcome = false })
                     .environmentObject(themeManager)
             } else {
-                ContentView()
-                    .environmentObject(themeManager)
-                    .preferredColorScheme(themeManager.isDarkMode ? .dark : .light)
-                    .accentColor(themeManager.customAccentColor)
+                NavigationView {
+                    ContentView()
+                }
+                .environmentObject(themeManager)
+                .preferredColorScheme(themeManager.isDarkMode ? .dark : .light)
+                .accentColor(themeManager.customAccentColor)
             }
         }
     }

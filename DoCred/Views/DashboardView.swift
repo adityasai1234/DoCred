@@ -88,7 +88,7 @@ struct DashboardView: View {
         .sheet(item: $selectedMiniGame) { game in
             switch game {
             case .memoryMatch:
-                MiniGameView(users: ["Alice", "Bob", "Charlie", "Dana"])
+            MiniGameView(users: ["Alice", "Bob", "Charlie", "Dana"])
             case .quickMath:
                 Text("Quick Math Game Coming Soon!")
                     .font(.largeTitle)
